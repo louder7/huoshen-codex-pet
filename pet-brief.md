@@ -13,7 +13,7 @@
 
 The approved visual source of truth is:
 
-`/Users/louder/Documents/Codex/pet-source/huoshen/main-reference.png`
+[`main-reference.png`](main-reference.png)
 
 Do not redesign the character. All animation states must preserve the identity shown in this image.
 

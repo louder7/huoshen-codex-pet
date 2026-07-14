@@ -4,6 +4,10 @@ Huoshen（火神）is an irritable but reliable pixel-art fire demon companion f
 
 See [the character and animation brief](pet-brief.md) for the approved visual specification.
 
+## Reference
+
+![Huoshen reference](main-reference.png)
+
 ## Character
 
 - Style: Pixel art
