@@ -2,6 +2,8 @@
 
 Huoshen（火神）is an irritable but reliable pixel-art fire demon companion for Codex.
 
+See [the character and animation brief](pet-brief.md) for the approved visual specification.
+
 ## Character
 
 - Style: Pixel art
@@ -26,11 +28,3 @@ Huoshen（火神）is an irritable but reliable pixel-art fire demon companion f
 - waiting
 - running
 - review
-
-## Installation
-
-Clone or download this repository, then copy the package into:
-
-```text
-~/.codex/pets/huoshen/
-```
