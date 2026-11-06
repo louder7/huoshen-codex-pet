@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>火神动画预览</title>
+  <style>
+    body { margin: 2rem auto; padding: 0 1rem; max-width: 60rem; font: 16px/1.5 system-ui, sans-serif; color: #202026; }
+    .notice { padding: .75rem; background: #fff2c4; border-left: 4px solid #a86c00; }
+    .error { color: #a40000; font-weight: bold; }
+    .controls, .views { display: flex; flex-wrap: wrap; gap: 1rem; align-items: end; margin: 1rem 0; }
+    label { display: inline-flex; flex-direction: column; gap: .2rem; }
+    label.check { flex-direction: row; align-items: center; }
+    button, select, input { font: inherit; }
+    canvas { display: block; image-rendering: pixelated; }
+    .surface { width: fit-content; background-color: #fff; }
+    .checker { background-image: linear-gradient(45deg,#ccc 25%,transparent 25%),linear-gradient(-45deg,#ccc 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#ccc 75%),linear-gradient(-45deg,transparent 75%,#ccc 75%); background-size: 16px 16px; background-position: 0 0,0 8px,8px -8px,-8px 0; }
+    .black { background-color: #000; }
+    .white { background-color: #fff; }
+    figure { margin: 0; }
+    figcaption { margin-bottom: .3rem; }
+  </style>
+</head>
+<body>
+  <h1>火神动画预览</h1>
+  <p class="notice">独立预览：映射状态及证据见下方；播放速度是可调的演示值，不代表 Codex 宿主计时或事件。</p>
+  <p id="error" class="error" role="alert"></p>
+  <div class="controls">
+    <label>状态或未映射行<select id="state" disabled></select></label>
+    <button id="play" type="button" disabled>暂停</button>
+    <button id="previous" type="button" disabled>上一帧</button>
+    <button id="next" type="button" disabled>下一帧</button>
+    <label class="check"><input id="loop" type="checkbox" checked disabled>循环</label>
+    <label>速度（FPS，仅预览）<input id="fps" type="number" value="8" min="1" max="60" step="1"></label>
+    <label>背景<select id="background"><option value="checker">棋盘</option><option value="black">黑色</option><option value="white">白色</option></select></label>
+    <label>目标宽度（像素）<input id="width" type="number" value="96" min="24" max="768" step="1"></label>
+  </div>
+  <p id="position" aria-live="polite"></p>
+  <p id="evidence"></p>
+  <div class="views">
+    <figure><figcaption>原尺寸</figcaption><div class="surface checker"><canvas id="original"></canvas></div></figure>
+    <figure><figcaption>目标尺寸（演示）</figcaption><div class="surface checker"><canvas id="scaled"></canvas></div></figure>
+  </div>
+  <script>
+    const $ = id => document.getElementById(id);
+    const state = $('state'), play = $('play'), loop = $('loop'), fps = $('fps');
+    const original = $('original'), scaled = $('scaled'), position = $('position');
+    let map, atlas, entries, frame = 0, playing = true, last = null, elapsed = 0;
+    const loopsByDefault = new Set(['idle', 'running-right', 'running-left', 'waiting', 'running']);
+
+    function showFrame() {
+      const entry = entries[state.value];
+      if (!entry) return;
+      const width = map.cellWidth, height = map.cellHeight;
+      for (const canvas of [original, scaled]) {
+        const ctx = canvas.getContext('2d');
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.imageSmoothingEnabled = false;
+        ctx.drawImage(atlas, entry.columns[frame] * width, entry.row * height, width, height, 0, 0, canvas.width, canvas.height);
+      }
+      position.textContent = `${state.value} · ${entry.status === 'verified' ? '映射已验证' : '映射待验证'} · 行 ${entry.row}，列 ${entry.columns[frame]} · 第 ${frame + 1} / ${entry.columns.length} 帧`;
+      $('evidence').textContent = `映射证据：${Array.isArray(entry.evidence) ? entry.evidence.join('；') : entry.evidence || '暂无，未映射行仅供逐格查看'}`;
+    }
+    function resize() {
+      if (!map) return;
+      const width = Math.max(24, Math.min(768, Number($('width').value) || 96));
+      scaled.width = width;
+      scaled.height = Math.round(width * map.cellHeight / map.cellWidth);
+      showFrame();
+    }
+    function resetClock() { last = null; elapsed = 0; }
+    function setPlaying(value) { playing = value; play.textContent = value ? '暂停' : '播放'; resetClock(); }
+    function tick(now) {
+      if (playing && entries) {
+        if (last !== null) {
+          const rate = Math.max(1, Math.min(60, Number(fps.value) || 8));
+          elapsed += now - last;
+          const steps = Math.floor(elapsed / (1000 / rate));
+          if (steps) {
+            elapsed %= 1000 / rate;
+            const length = entries[state.value].columns.length;
+            if (loop.checked) frame = (frame + steps) % length;
+            else if (frame + steps >= length - 1) { frame = length - 1; setPlaying(false); }
+            else frame += steps;
+            showFrame();
+          }
+        }
+        last = now;
+      }
+      requestAnimationFrame(tick);
+    }
+    state.addEventListener('change', () => {
+      frame = 0;
+      loop.checked = loopsByDefault.has(state.value);
+      setPlaying(true);
+      showFrame();
+    });
+    play.addEventListener('click', () => {
+      if (!playing && !loop.checked && frame === entries[state.value].columns.length - 1) frame = 0;
+      setPlaying(!playing);
+      showFrame();
+    });
+    for (const [id, delta] of [['previous', -1], ['next', 1]]) $(id).addEventListener('click', () => {
+      setPlaying(false);
+      const length = entries[state.value].columns.length;
+      frame = (frame + delta + length) % length;
+      showFrame();
+    });
+    fps.addEventListener('change', resetClock);
+    $('width').addEventListener('change', resize);
+    $('background').addEventListener('change', event => {
+      document.querySelectorAll('.surface').forEach(element => element.className = `surface ${event.target.value}`);
+    });
+    async function init() {
+      try {
+        const response = await fetch('../animation-map.json');
+        if (!response.ok) throw new Error(`无法读取映射（HTTP ${response.status}）`);
+        map = await response.json();
+        if (!Number.isInteger(map.cellWidth) || !Number.isInteger(map.cellHeight) || !map.states) throw new Error('映射格式无效');
+        entries = { ...map.states };
+        for (const row of map.unmappedRows || []) entries[`未映射行 ${row}`] = { row, columns: Array.from({length: map.columns}, (_, column) => column), status: 'provisional' };
+        for (const [name, entry] of Object.entries(entries)) {
+          if (!Number.isInteger(entry.row) || entry.row < 0 || entry.row >= map.rows || !Array.isArray(entry.columns) || !entry.columns.length || entry.columns.some(column => !Number.isInteger(column) || column < 0 || column >= map.columns)) throw new Error(`状态 ${name} 的映射无效`);
+          state.add(new Option(name, name));
+        }
+        if (!state.options.length) throw new Error('映射中没有可预览状态');
+        atlas = new Image();
+        atlas.src = new URL(`../${map.atlasPath}`, location.href).href;
+        await atlas.decode();
+        if (atlas.naturalWidth !== map.columns * map.cellWidth || atlas.naturalHeight !== map.rows * map.cellHeight) throw new Error('图集尺寸与映射不符');
+        original.width = map.cellWidth; original.height = map.cellHeight;
+        loop.checked = loopsByDefault.has(state.value);
+        for (const id of ['state', 'play', 'previous', 'next', 'loop']) $(id).disabled = false;
+        resize();
+        requestAnimationFrame(tick);
+      } catch (error) {
+        $('error').textContent = `预览加载失败：${error.message}。请从仓库根目录启动本地静态服务器后重新打开。`;
+      }
+    }
+    init();
+  </script>
+</body>
+</html>
