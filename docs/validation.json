@@ -1,6 +1,6 @@
 {
   "ok": false,
-  "atlasSha256": "a090ea73945449387c6cfaaa26c5defc956365cc4cdda7e086d6dc0c92224a32",
+  "atlasSha256": "3ccac75872cfee5db23801449a53ac4dbc1060afb5d9f5ba26fb891ffefd5578",
   "width": 1536,
   "height": 2288,
   "columns": 8,
@@ -14,9 +14,9 @@
       "assignment": "idle",
       "nonempty": true,
       "bbox": [
-        21,
+        20,
         5,
-        170,
+        171,
         203
       ],
       "touchesBoundary": false
@@ -25,339 +25,6 @@
       "row": 0,
       "column": 1,
       "assignment": "idle",
-      "nonempty": true,
-      "bbox": [
-        29,
-        5,
-        162,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 0,
-      "column": 2,
-      "assignment": "idle",
-      "nonempty": true,
-      "bbox": [
-        32,
-        5,
-        159,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 0,
-      "column": 3,
-      "assignment": "idle",
-      "nonempty": true,
-      "bbox": [
-        29,
-        5,
-        163,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 0,
-      "column": 4,
-      "assignment": "idle",
-      "nonempty": true,
-      "bbox": [
-        31,
-        5,
-        160,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 0,
-      "column": 5,
-      "assignment": "idle",
-      "nonempty": true,
-      "bbox": [
-        25,
-        5,
-        166,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 0,
-      "column": 6,
-      "assignment": null,
-      "nonempty": true,
-      "bbox": [
-        21,
-        5,
-        170,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 0,
-      "column": 7,
-      "assignment": null,
-      "nonempty": false,
-      "bbox": null,
-      "touchesBoundary": false
-    },
-    {
-      "row": 1,
-      "column": 0,
-      "assignment": "running-right",
-      "nonempty": true,
-      "bbox": [
-        13,
-        5,
-        178,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 1,
-      "column": 1,
-      "assignment": "running-right",
-      "nonempty": true,
-      "bbox": [
-        41,
-        5,
-        151,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 1,
-      "column": 2,
-      "assignment": "running-right",
-      "nonempty": true,
-      "bbox": [
-        30,
-        5,
-        161,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 1,
-      "column": 3,
-      "assignment": "running-right",
-      "nonempty": true,
-      "bbox": [
-        7,
-        5,
-        185,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 1,
-      "column": 4,
-      "assignment": "running-right",
-      "nonempty": true,
-      "bbox": [
-        19,
-        5,
-        172,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 1,
-      "column": 5,
-      "assignment": "running-right",
-      "nonempty": true,
-      "bbox": [
-        42,
-        5,
-        149,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 1,
-      "column": 6,
-      "assignment": "running-right",
-      "nonempty": true,
-      "bbox": [
-        29,
-        5,
-        163,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 1,
-      "column": 7,
-      "assignment": "running-right",
-      "nonempty": true,
-      "bbox": [
-        12,
-        5,
-        180,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 2,
-      "column": 0,
-      "assignment": "running-left",
-      "nonempty": true,
-      "bbox": [
-        22,
-        5,
-        170,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 2,
-      "column": 1,
-      "assignment": "running-left",
-      "nonempty": true,
-      "bbox": [
-        41,
-        5,
-        151,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 2,
-      "column": 2,
-      "assignment": "running-left",
-      "nonempty": true,
-      "bbox": [
-        11,
-        5,
-        181,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 2,
-      "column": 3,
-      "assignment": "running-left",
-      "nonempty": true,
-      "bbox": [
-        13,
-        5,
-        179,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 2,
-      "column": 4,
-      "assignment": "running-left",
-      "nonempty": true,
-      "bbox": [
-        19,
-        5,
-        172,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 2,
-      "column": 5,
-      "assignment": "running-left",
-      "nonempty": true,
-      "bbox": [
-        31,
-        5,
-        161,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 2,
-      "column": 6,
-      "assignment": "running-left",
-      "nonempty": true,
-      "bbox": [
-        29,
-        5,
-        163,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 2,
-      "column": 7,
-      "assignment": "running-left",
-      "nonempty": true,
-      "bbox": [
-        18,
-        5,
-        173,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 3,
-      "column": 0,
-      "assignment": "waving",
-      "nonempty": true,
-      "bbox": [
-        17,
-        5,
-        174,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 3,
-      "column": 1,
-      "assignment": "waving",
-      "nonempty": true,
-      "bbox": [
-        16,
-        5,
-        176,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 3,
-      "column": 2,
-      "assignment": "waving",
-      "nonempty": true,
-      "bbox": [
-        17,
-        5,
-        174,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 3,
-      "column": 3,
-      "assignment": "waving",
       "nonempty": true,
       "bbox": [
         20,
@@ -368,182 +35,9 @@
       "touchesBoundary": false
     },
     {
-      "row": 3,
-      "column": 4,
-      "assignment": null,
-      "nonempty": false,
-      "bbox": null,
-      "touchesBoundary": false
-    },
-    {
-      "row": 3,
-      "column": 5,
-      "assignment": null,
-      "nonempty": false,
-      "bbox": null,
-      "touchesBoundary": false
-    },
-    {
-      "row": 3,
-      "column": 6,
-      "assignment": null,
-      "nonempty": false,
-      "bbox": null,
-      "touchesBoundary": false
-    },
-    {
-      "row": 3,
-      "column": 7,
-      "assignment": null,
-      "nonempty": false,
-      "bbox": null,
-      "touchesBoundary": false
-    },
-    {
-      "row": 4,
-      "column": 0,
-      "assignment": "jumping",
-      "nonempty": true,
-      "bbox": [
-        13,
-        5,
-        178,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 4,
-      "column": 1,
-      "assignment": "jumping",
-      "nonempty": true,
-      "bbox": [
-        5,
-        12,
-        187,
-        195
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 4,
+      "row": 0,
       "column": 2,
-      "assignment": "jumping",
-      "nonempty": true,
-      "bbox": [
-        9,
-        5,
-        183,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 4,
-      "column": 3,
-      "assignment": "jumping",
-      "nonempty": true,
-      "bbox": [
-        5,
-        9,
-        187,
-        199
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 4,
-      "column": 4,
-      "assignment": "jumping",
-      "nonempty": true,
-      "bbox": [
-        9,
-        5,
-        182,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 4,
-      "column": 5,
-      "assignment": null,
-      "nonempty": false,
-      "bbox": null,
-      "touchesBoundary": false
-    },
-    {
-      "row": 4,
-      "column": 6,
-      "assignment": null,
-      "nonempty": false,
-      "bbox": null,
-      "touchesBoundary": false
-    },
-    {
-      "row": 4,
-      "column": 7,
-      "assignment": null,
-      "nonempty": false,
-      "bbox": null,
-      "touchesBoundary": false
-    },
-    {
-      "row": 5,
-      "column": 0,
-      "assignment": "failed",
-      "nonempty": true,
-      "bbox": [
-        35,
-        5,
-        156,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 5,
-      "column": 1,
-      "assignment": "failed",
-      "nonempty": true,
-      "bbox": [
-        37,
-        5,
-        154,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 5,
-      "column": 2,
-      "assignment": "failed",
-      "nonempty": true,
-      "bbox": [
-        32,
-        5,
-        159,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 5,
-      "column": 3,
-      "assignment": "failed",
-      "nonempty": true,
-      "bbox": [
-        31,
-        5,
-        161,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 5,
-      "column": 4,
-      "assignment": "failed",
+      "assignment": "idle",
       "nonempty": true,
       "bbox": [
         20,
@@ -554,87 +48,69 @@
       "touchesBoundary": false
     },
     {
-      "row": 5,
-      "column": 5,
-      "assignment": "failed",
-      "nonempty": true,
-      "bbox": [
-        19,
-        5,
-        172,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 5,
-      "column": 6,
-      "assignment": "failed",
-      "nonempty": true,
-      "bbox": [
-        32,
-        5,
-        159,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 5,
-      "column": 7,
-      "assignment": "failed",
-      "nonempty": true,
-      "bbox": [
-        33,
-        5,
-        158,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 6,
-      "column": 0,
-      "assignment": "waiting",
-      "nonempty": true,
-      "bbox": [
-        7,
-        5,
-        184,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 6,
-      "column": 1,
-      "assignment": "waiting",
-      "nonempty": true,
-      "bbox": [
-        18,
-        5,
-        174,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 6,
-      "column": 2,
-      "assignment": "waiting",
-      "nonempty": true,
-      "bbox": [
-        19,
-        5,
-        172,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 6,
+      "row": 0,
       "column": 3,
-      "assignment": "waiting",
+      "assignment": "idle",
+      "nonempty": true,
+      "bbox": [
+        20,
+        5,
+        171,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 0,
+      "column": 4,
+      "assignment": "idle",
+      "nonempty": true,
+      "bbox": [
+        20,
+        5,
+        171,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 0,
+      "column": 5,
+      "assignment": "idle",
+      "nonempty": true,
+      "bbox": [
+        20,
+        5,
+        171,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 0,
+      "column": 6,
+      "assignment": null,
+      "nonempty": true,
+      "bbox": [
+        20,
+        5,
+        171,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 0,
+      "column": 7,
+      "assignment": null,
+      "nonempty": false,
+      "bbox": null,
+      "touchesBoundary": false
+    },
+    {
+      "row": 1,
+      "column": 0,
+      "assignment": "running-right",
       "nonempty": true,
       "bbox": [
         19,
@@ -645,9 +121,113 @@
       "touchesBoundary": false
     },
     {
-      "row": 6,
+      "row": 1,
+      "column": 1,
+      "assignment": "running-right",
+      "nonempty": true,
+      "bbox": [
+        5,
+        8,
+        187,
+        199
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 1,
+      "column": 2,
+      "assignment": "running-right",
+      "nonempty": true,
+      "bbox": [
+        14,
+        5,
+        177,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 1,
+      "column": 3,
+      "assignment": "running-right",
+      "nonempty": true,
+      "bbox": [
+        5,
+        26,
+        187,
+        182
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 1,
       "column": 4,
-      "assignment": "waiting",
+      "assignment": "running-right",
+      "nonempty": true,
+      "bbox": [
+        5,
+        28,
+        187,
+        180
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 1,
+      "column": 5,
+      "assignment": "running-right",
+      "nonempty": true,
+      "bbox": [
+        5,
+        18,
+        187,
+        189
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 1,
+      "column": 6,
+      "assignment": "running-right",
+      "nonempty": true,
+      "bbox": [
+        5,
+        11,
+        187,
+        197
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 1,
+      "column": 7,
+      "assignment": "running-right",
+      "nonempty": true,
+      "bbox": [
+        5,
+        24,
+        187,
+        184
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 2,
+      "column": 0,
+      "assignment": "running-left",
+      "nonempty": true,
+      "bbox": [
+        27,
+        5,
+        165,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 2,
+      "column": 1,
+      "assignment": "running-left",
       "nonempty": true,
       "bbox": [
         23,
@@ -658,77 +238,100 @@
       "touchesBoundary": false
     },
     {
-      "row": 6,
-      "column": 5,
-      "assignment": "waiting",
-      "nonempty": true,
-      "bbox": [
-        14,
-        5,
-        178,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 6,
-      "column": 6,
-      "assignment": null,
-      "nonempty": false,
-      "bbox": null,
-      "touchesBoundary": false
-    },
-    {
-      "row": 6,
-      "column": 7,
-      "assignment": null,
-      "nonempty": false,
-      "bbox": null,
-      "touchesBoundary": false
-    },
-    {
-      "row": 7,
-      "column": 0,
-      "assignment": "running",
-      "nonempty": true,
-      "bbox": [
-        16,
-        5,
-        176,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 7,
-      "column": 1,
-      "assignment": "running",
-      "nonempty": true,
-      "bbox": [
-        27,
-        5,
-        164,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 7,
+      "row": 2,
       "column": 2,
-      "assignment": "running",
+      "assignment": "running-left",
       "nonempty": true,
       "bbox": [
-        27,
+        23,
         5,
-        165,
+        169,
         203
       ],
       "touchesBoundary": false
     },
     {
-      "row": 7,
+      "row": 2,
       "column": 3,
-      "assignment": "running",
+      "assignment": "running-left",
+      "nonempty": true,
+      "bbox": [
+        21,
+        5,
+        171,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 2,
+      "column": 4,
+      "assignment": "running-left",
+      "nonempty": true,
+      "bbox": [
+        32,
+        5,
+        159,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 2,
+      "column": 5,
+      "assignment": "running-left",
+      "nonempty": true,
+      "bbox": [
+        36,
+        5,
+        156,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 2,
+      "column": 6,
+      "assignment": "running-left",
+      "nonempty": true,
+      "bbox": [
+        38,
+        5,
+        154,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 2,
+      "column": 7,
+      "assignment": "running-left",
+      "nonempty": true,
+      "bbox": [
+        43,
+        5,
+        148,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 3,
+      "column": 0,
+      "assignment": "waving",
+      "nonempty": true,
+      "bbox": [
+        24,
+        5,
+        168,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 3,
+      "column": 1,
+      "assignment": "waving",
       "nonempty": true,
       "bbox": [
         24,
@@ -739,252 +342,198 @@
       "touchesBoundary": false
     },
     {
-      "row": 7,
-      "column": 4,
-      "assignment": "running",
-      "nonempty": true,
-      "bbox": [
-        31,
-        5,
-        161,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 7,
-      "column": 5,
-      "assignment": "running",
-      "nonempty": true,
-      "bbox": [
-        28,
-        5,
-        163,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 7,
-      "column": 6,
-      "assignment": null,
-      "nonempty": false,
-      "bbox": null,
-      "touchesBoundary": false
-    },
-    {
-      "row": 7,
-      "column": 7,
-      "assignment": null,
-      "nonempty": false,
-      "bbox": null,
-      "touchesBoundary": false
-    },
-    {
-      "row": 8,
-      "column": 0,
-      "assignment": "review",
-      "nonempty": true,
-      "bbox": [
-        19,
-        5,
-        172,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 8,
-      "column": 1,
-      "assignment": "review",
-      "nonempty": true,
-      "bbox": [
-        34,
-        5,
-        157,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 8,
+      "row": 3,
       "column": 2,
-      "assignment": "review",
+      "assignment": "waving",
       "nonempty": true,
       "bbox": [
-        33,
         5,
-        158,
-        203
+        48,
+        187,
+        159
       ],
       "touchesBoundary": false
     },
     {
-      "row": 8,
+      "row": 3,
       "column": 3,
-      "assignment": "review",
+      "assignment": "waving",
       "nonempty": true,
       "bbox": [
-        27,
+        25,
         5,
-        165,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 8,
-      "column": 4,
-      "assignment": "review",
-      "nonempty": true,
-      "bbox": [
-        34,
-        5,
-        157,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 8,
-      "column": 5,
-      "assignment": "review",
-      "nonempty": true,
-      "bbox": [
-        30,
-        5,
-        161,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 8,
-      "column": 6,
-      "assignment": null,
-      "nonempty": false,
-      "bbox": null,
-      "touchesBoundary": false
-    },
-    {
-      "row": 8,
-      "column": 7,
-      "assignment": null,
-      "nonempty": false,
-      "bbox": null,
-      "touchesBoundary": false
-    },
-    {
-      "row": 9,
-      "column": 0,
-      "assignment": "unmapped",
-      "nonempty": true,
-      "bbox": [
-        22,
-        6,
-        174,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 9,
-      "column": 1,
-      "assignment": "unmapped",
-      "nonempty": true,
-      "bbox": [
-        22,
-        5,
-        172,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 9,
-      "column": 2,
-      "assignment": "unmapped",
-      "nonempty": true,
-      "bbox": [
-        27,
-        6,
         166,
         203
       ],
       "touchesBoundary": false
     },
     {
-      "row": 9,
-      "column": 3,
-      "assignment": "unmapped",
-      "nonempty": true,
-      "bbox": [
-        33,
-        6,
-        163,
-        203
-      ],
-      "touchesBoundary": false
-    },
-    {
-      "row": 9,
+      "row": 3,
       "column": 4,
-      "assignment": "unmapped",
-      "nonempty": true,
-      "bbox": [
-        35,
-        7,
-        161,
-        203
-      ],
+      "assignment": null,
+      "nonempty": false,
+      "bbox": null,
       "touchesBoundary": false
     },
     {
-      "row": 9,
+      "row": 3,
       "column": 5,
-      "assignment": "unmapped",
-      "nonempty": true,
-      "bbox": [
-        38,
-        13,
-        157,
-        203
-      ],
+      "assignment": null,
+      "nonempty": false,
+      "bbox": null,
       "touchesBoundary": false
     },
     {
-      "row": 9,
+      "row": 3,
       "column": 6,
-      "assignment": "unmapped",
-      "nonempty": true,
-      "bbox": [
-        41,
-        20,
-        157,
-        203
-      ],
+      "assignment": null,
+      "nonempty": false,
+      "bbox": null,
       "touchesBoundary": false
     },
     {
-      "row": 9,
+      "row": 3,
       "column": 7,
-      "assignment": "unmapped",
+      "assignment": null,
+      "nonempty": false,
+      "bbox": null,
+      "touchesBoundary": false
+    },
+    {
+      "row": 4,
+      "column": 0,
+      "assignment": "jumping",
       "nonempty": true,
       "bbox": [
-        44,
+        5,
+        16,
+        187,
+        191
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 4,
+      "column": 1,
+      "assignment": "jumping",
+      "nonempty": true,
+      "bbox": [
+        5,
+        8,
+        187,
+        199
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 4,
+      "column": 2,
+      "assignment": "jumping",
+      "nonempty": true,
+      "bbox": [
+        5,
+        13,
+        187,
+        195
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 4,
+      "column": 3,
+      "assignment": "jumping",
+      "nonempty": true,
+      "bbox": [
+        5,
+        9,
+        187,
+        198
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 4,
+      "column": 4,
+      "assignment": "jumping",
+      "nonempty": true,
+      "bbox": [
+        5,
+        15,
+        187,
+        192
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 4,
+      "column": 5,
+      "assignment": null,
+      "nonempty": false,
+      "bbox": null,
+      "touchesBoundary": false
+    },
+    {
+      "row": 4,
+      "column": 6,
+      "assignment": null,
+      "nonempty": false,
+      "bbox": null,
+      "touchesBoundary": false
+    },
+    {
+      "row": 4,
+      "column": 7,
+      "assignment": null,
+      "nonempty": false,
+      "bbox": null,
+      "touchesBoundary": false
+    },
+    {
+      "row": 5,
+      "column": 0,
+      "assignment": "failed",
+      "nonempty": true,
+      "bbox": [
         19,
-        155,
+        5,
+        173,
         203
       ],
       "touchesBoundary": false
     },
     {
-      "row": 10,
-      "column": 0,
-      "assignment": "unmapped",
+      "row": 5,
+      "column": 1,
+      "assignment": "failed",
       "nonempty": true,
       "bbox": [
-        22,
+        24,
+        5,
+        167,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 5,
+      "column": 2,
+      "assignment": "failed",
+      "nonempty": true,
+      "bbox": [
+        23,
+        5,
+        168,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 5,
+      "column": 3,
+      "assignment": "failed",
+      "nonempty": true,
+      "bbox": [
+        20,
         5,
         171,
         203
@@ -992,14 +541,465 @@
       "touchesBoundary": false
     },
     {
+      "row": 5,
+      "column": 4,
+      "assignment": "failed",
+      "nonempty": true,
+      "bbox": [
+        19,
+        5,
+        173,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 5,
+      "column": 5,
+      "assignment": "failed",
+      "nonempty": true,
+      "bbox": [
+        23,
+        5,
+        168,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 5,
+      "column": 6,
+      "assignment": "failed",
+      "nonempty": true,
+      "bbox": [
+        25,
+        5,
+        166,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 5,
+      "column": 7,
+      "assignment": "failed",
+      "nonempty": true,
+      "bbox": [
+        21,
+        5,
+        170,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 6,
+      "column": 0,
+      "assignment": "waiting",
+      "nonempty": true,
+      "bbox": [
+        11,
+        5,
+        180,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 6,
+      "column": 1,
+      "assignment": "waiting",
+      "nonempty": true,
+      "bbox": [
+        20,
+        5,
+        171,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 6,
+      "column": 2,
+      "assignment": "waiting",
+      "nonempty": true,
+      "bbox": [
+        24,
+        5,
+        168,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 6,
+      "column": 3,
+      "assignment": "waiting",
+      "nonempty": true,
+      "bbox": [
+        24,
+        5,
+        168,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 6,
+      "column": 4,
+      "assignment": "waiting",
+      "nonempty": true,
+      "bbox": [
+        22,
+        5,
+        170,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 6,
+      "column": 5,
+      "assignment": "waiting",
+      "nonempty": true,
+      "bbox": [
+        18,
+        5,
+        174,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 6,
+      "column": 6,
+      "assignment": null,
+      "nonempty": false,
+      "bbox": null,
+      "touchesBoundary": false
+    },
+    {
+      "row": 6,
+      "column": 7,
+      "assignment": null,
+      "nonempty": false,
+      "bbox": null,
+      "touchesBoundary": false
+    },
+    {
+      "row": 7,
+      "column": 0,
+      "assignment": "running",
+      "nonempty": true,
+      "bbox": [
+        19,
+        5,
+        173,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 7,
+      "column": 1,
+      "assignment": "running",
+      "nonempty": true,
+      "bbox": [
+        26,
+        5,
+        165,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 7,
+      "column": 2,
+      "assignment": "running",
+      "nonempty": true,
+      "bbox": [
+        16,
+        5,
+        175,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 7,
+      "column": 3,
+      "assignment": "running",
+      "nonempty": true,
+      "bbox": [
+        17,
+        5,
+        174,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 7,
+      "column": 4,
+      "assignment": "running",
+      "nonempty": true,
+      "bbox": [
+        18,
+        5,
+        174,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 7,
+      "column": 5,
+      "assignment": "running",
+      "nonempty": true,
+      "bbox": [
+        18,
+        5,
+        173,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 7,
+      "column": 6,
+      "assignment": null,
+      "nonempty": false,
+      "bbox": null,
+      "touchesBoundary": false
+    },
+    {
+      "row": 7,
+      "column": 7,
+      "assignment": null,
+      "nonempty": false,
+      "bbox": null,
+      "touchesBoundary": false
+    },
+    {
+      "row": 8,
+      "column": 0,
+      "assignment": "review",
+      "nonempty": true,
+      "bbox": [
+        11,
+        5,
+        181,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 8,
+      "column": 1,
+      "assignment": "review",
+      "nonempty": true,
+      "bbox": [
+        13,
+        5,
+        178,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 8,
+      "column": 2,
+      "assignment": "review",
+      "nonempty": true,
+      "bbox": [
+        22,
+        5,
+        170,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 8,
+      "column": 3,
+      "assignment": "review",
+      "nonempty": true,
+      "bbox": [
+        22,
+        5,
+        170,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 8,
+      "column": 4,
+      "assignment": "review",
+      "nonempty": true,
+      "bbox": [
+        17,
+        5,
+        175,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 8,
+      "column": 5,
+      "assignment": "review",
+      "nonempty": true,
+      "bbox": [
+        19,
+        5,
+        172,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 8,
+      "column": 6,
+      "assignment": null,
+      "nonempty": false,
+      "bbox": null,
+      "touchesBoundary": false
+    },
+    {
+      "row": 8,
+      "column": 7,
+      "assignment": null,
+      "nonempty": false,
+      "bbox": null,
+      "touchesBoundary": false
+    },
+    {
+      "row": 9,
+      "column": 0,
+      "assignment": "unmapped",
+      "nonempty": true,
+      "bbox": [
+        43,
+        97,
+        148,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 9,
+      "column": 1,
+      "assignment": "unmapped",
+      "nonempty": true,
+      "bbox": [
+        42,
+        94,
+        141,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 9,
+      "column": 2,
+      "assignment": "unmapped",
+      "nonempty": true,
+      "bbox": [
+        41,
+        94,
+        137,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 9,
+      "column": 3,
+      "assignment": "unmapped",
+      "nonempty": true,
+      "bbox": [
+        43,
+        96,
+        130,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 9,
+      "column": 4,
+      "assignment": "unmapped",
+      "nonempty": true,
+      "bbox": [
+        42,
+        100,
+        127,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 9,
+      "column": 5,
+      "assignment": "unmapped",
+      "nonempty": true,
+      "bbox": [
+        42,
+        99,
+        126,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 9,
+      "column": 6,
+      "assignment": "unmapped",
+      "nonempty": true,
+      "bbox": [
+        45,
+        100,
+        130,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 9,
+      "column": 7,
+      "assignment": "unmapped",
+      "nonempty": true,
+      "bbox": [
+        43,
+        107,
+        134,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
+      "row": 10,
+      "column": 0,
+      "assignment": "unmapped",
+      "nonempty": true,
+      "bbox": [
+        16,
+        41,
+        174,
+        203
+      ],
+      "touchesBoundary": false
+    },
+    {
       "row": 10,
       "column": 1,
       "assignment": "unmapped",
       "nonempty": true,
       "bbox": [
-        32,
-        5,
-        165,
+        9,
+        47,
+        154,
         203
       ],
       "touchesBoundary": false
@@ -1010,9 +1010,9 @@
       "assignment": "unmapped",
       "nonempty": true,
       "bbox": [
-        42,
         5,
-        164,
+        51,
+        144,
         203
       ],
       "touchesBoundary": false
@@ -1023,9 +1023,9 @@
       "assignment": "unmapped",
       "nonempty": true,
       "bbox": [
-        47,
-        6,
-        163,
+        11,
+        51,
+        149,
         203
       ],
       "touchesBoundary": false
@@ -1036,9 +1036,9 @@
       "assignment": "unmapped",
       "nonempty": true,
       "bbox": [
-        49,
-        6,
-        163,
+        69,
+        44,
+        156,
         203
       ],
       "touchesBoundary": false
@@ -1049,9 +1049,9 @@
       "assignment": "unmapped",
       "nonempty": true,
       "bbox": [
-        47,
-        5,
-        163,
+        67,
+        44,
+        172,
         203
       ],
       "touchesBoundary": false
@@ -1062,9 +1062,9 @@
       "assignment": "unmapped",
       "nonempty": true,
       "bbox": [
-        49,
-        7,
-        154,
+        46,
+        51,
+        165,
         203
       ],
       "touchesBoundary": false
@@ -1075,9 +1075,9 @@
       "assignment": "unmapped",
       "nonempty": true,
       "bbox": [
-        28,
-        5,
-        172,
+        42,
+        51,
+        164,
         203
       ],
       "touchesBoundary": false

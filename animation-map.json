@@ -1,7 +1,7 @@
 {
   "sourceCommit": "c8adb487a0d7df37b491e33dfde8528a663d9755",
   "atlasPath": "spritesheet.webp",
-  "atlasSha256": "a090ea73945449387c6cfaaa26c5defc956365cc4cdda7e086d6dc0c92224a32",
+  "atlasSha256": "3ccac75872cfee5db23801449a53ac4dbc1060afb5d9f5ba26fb891ffefd5578",
   "width": 1536,
   "height": 2288,
   "columns": 8,
@@ -218,5 +218,6 @@
     9,
     10
   ],
-  "directionEvidence": "Rows 9 and 10 are 16 clockwise pointer directions in ChatGPT.app 26.1029.61003; not task animations. Individual pose semantics are not verified."
+  "directionEvidence": "Rows 9 and 10 are 16 clockwise pointer directions in ChatGPT.app 26.1029.61003; not task animations. Individual pose semantics are not verified.",
+  "assetEvidence": "Huoshen v25 package; sourceCommit records the earlier original atlas audit baseline, not the origin of v25."
 }

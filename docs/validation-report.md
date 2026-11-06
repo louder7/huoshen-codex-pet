@@ -1,5 +1,21 @@
 # Huoshen asset validation
 
+## Current revision: v25
+
+Checked: 2026-11-07. The v25 package supplies `pet.json`, `preview.webp`, and `spritesheet.webp`; its pet ID remains `huoshen`. The original reference and character brief are retained. The map's `sourceCommit` is the earlier original-atlas audit baseline, not a claim that v25 was present there. The current atlas is identified by its SHA-256 below.
+
+| File | SHA-256 |
+| --- | --- |
+| pet.json | `1a5b00c99776d90ec202e931c4b65ca5351680b38b9146a182ed16a464f564b5` |
+| preview.webp | `39b3927c321444f9da7f530b6195bb0a35e0dee3a04ea18c81a253e9311aabbb` |
+| spritesheet.webp | `3ccac75872cfee5db23801449a53ac4dbc1060afb5d9f5ba26fb891ffefd5578` |
+
+The v25 atlas decodes as single-frame RGBA WebP at 1536×2288. The current [validation.json](validation.json) records 74 nonempty and 14 empty cells and one failure: row 0, column 6 is nonempty although the inspected host uses idle columns 0–5. Five validator tests pass. The prior artwork findings below describe the original atlas and have not been revalidated against v25. This update does not establish a v25 visual acceptance or live host-event test.
+
+## Historical audit: original atlas
+
+The following records the original baseline and its prior inspection, not the current v25 asset status.
+
 Checked: 2026-11-07. Baseline: `c8adb487a0d7df37b491e33dfde8528a663d9755`. This report separates static checks, preview, artwork and host behavior. No asset was modified.
 
 ## Baseline files and SHA-256
@@ -13,7 +29,7 @@ Checked: 2026-11-07. Baseline: `c8adb487a0d7df37b491e33dfde8528a663d9755`. This 
 | preview.webp | `f3343e9731c66272b38f4b2a1fe5ba8cee3a69b2684c4dd97d1676be78c8c093` |
 | spritesheet.webp | `a090ea73945449387c6cfaaa26c5defc956365cc4cdda7e086d6dc0c92224a32` |
 
-README has since been extended; the other five original files remain unchanged. The baseline atlas is single-frame WebP, 1536×2288, RGBA, divided into 8×11 cells of 192×208 pixels.
+At that audit, README had been extended and the other five original files remained unchanged. The v25 update has since replaced the manifest, preview and atlas. The baseline atlas is single-frame WebP, 1536×2288, RGBA, divided into 8×11 cells of 192×208 pixels.
 
 ## Protocol evidence and scope
 
@@ -25,7 +41,7 @@ The source specification's alpha-based idle candidate had seven nonempty cells. 
 
 ## Static validation
 
-Run `python tools/validate_assets.py` in a Python 3.9+ environment with Pillow. The checked result is [validation.json](validation.json): **failed**, exit 1, 74 nonempty and 14 empty cells. The only reported error is `unexpected non-empty cell 0,6` (zero-based row, column). No alpha bounding box touches a cell boundary. This is not a pixel-by-pixel determination of detached fragments, shadows, lighting or visual correctness.
+Run `python tools/validate_assets.py` in a Python 3.9+ environment with Pillow. The original-atlas result was **failed**, exit 1, 74 nonempty and 14 empty cells. The only reported error is `unexpected non-empty cell 0,6` (zero-based row, column). No alpha bounding box touches a cell boundary. This is not a pixel-by-pixel determination of detached fragments, shadows, lighting or visual correctness.
 
 Five automated tests pass, including out-of-range, empty assigned cell, unexpected nonempty cell, boundary contact, overlap, hash and duration mismatch failures. Their fixtures do not replace validation of the real atlas.
 

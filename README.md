@@ -2,7 +2,7 @@
 
 Huoshen（火神）is an irritable but reliable pixel-art fire demon companion for Codex.
 
-See [the character and animation brief](pet-brief.md) for the approved visual specification.
+The current pet assets are the v25 revision, retaining the `huoshen` ID. See [the character and animation brief](pet-brief.md) for the visual identity and [the v25 preview](preview.webp).
 
 ## Reference
 
@@ -48,6 +48,6 @@ python -m unittest discover -s tests
 python -m http.server 8000
 ```
 
-The current atlas produces one validation error: idle row 0, column 6 is nonempty even though the inspected host uses only columns 0–5. The validator exits nonzero until the asset or verified protocol changes; it does not modify the atlas.
+The v25 atlas produces one validation error: idle row 0, column 6 is nonempty even though the inspected host uses only columns 0–5. The validator exits nonzero until the asset or verified protocol changes; it does not modify the atlas.
 
 Open <http://localhost:8000/tools/preview.html>. The preview uses adjustable demonstration timing, not verified host timing. It does not integrate with Codex or prove that host events and animation behavior work. See [the validation report](docs/validation-report.md) for evidence and remaining checks.
